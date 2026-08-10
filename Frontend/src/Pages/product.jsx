@@ -29,7 +29,7 @@ function Products() {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const response = await fetch("http://localhost:5000/api/products");
+        const response = await fetch("http://neelkanth-electronical-1.onrender.com/api/products");
  
         if (response.ok) {
           const data = await response.json();

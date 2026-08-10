@@ -18,7 +18,7 @@ function ProductDetail() {
       const fetchProduct = async () => {
         try {
           const response = await fetch(
-            `http://localhost:5000/api/products/${id}`,
+            `http://neelkanth-electronical-1.onrender.com/api/products/${id}`,
           );
           if (response.ok) {
             const data = await response.json();

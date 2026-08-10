@@ -78,7 +78,7 @@ function Admin() {
     }, []);
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/products")
+        fetch("http://neelkanth-electronical-1.onrender.com/api/products")
             .then((res) => res.json())
             .then((data) => {
                 setProducts(data);
@@ -290,7 +290,7 @@ function Admin() {
 
         try {
             if (editingId) {
-                const response = await fetch(`http://localhost:5000/api/products/${editingId}`, {
+                const response = await fetch(`http://neelkanth-electronical-1.onrender.com/api/products/${editingId}`, {
                     method: "PUT",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(productData),
@@ -305,7 +305,7 @@ function Admin() {
                     setFormError("Failed to update product. Please try again.");
                 }
             } else {
-                const response = await fetch("http://localhost:5000/api/products", {
+                const response = await fetch("http://neelkanth-electronical-1.onrender.com/api/products", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(productData),
@@ -331,7 +331,7 @@ function Admin() {
     const handleDeleteProduct = async (id) => {
         if (window.confirm("Are you sure you want to delete this product?")) {
             try {
-                const response = await fetch(`http://localhost:5000/api/products/${id}`, {
+                const response = await fetch(`http://neelkanth-electronical-1.onrender.com/api/products/${id}`, {
                     method: "DELETE",
                 });
 
