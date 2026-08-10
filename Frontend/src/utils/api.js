@@ -161,7 +161,7 @@
 // }
 import { getCurrentUser } from "./auth";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "http://https://neelkanth-electronical-1.onrender.com//api";
 
 // Attaches the logged-in user's id so the backend knows who's asking.
 // (No JWT - see auth.js / backend/middleware/auth.js for why.)

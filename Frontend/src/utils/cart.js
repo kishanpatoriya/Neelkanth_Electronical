@@ -1,6 +1,6 @@
 import { getCurrentUser } from "./auth";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "http://https://neelkanth-electronical-1.onrender.com//api";
 const GUEST_CART_KEY = "guestCartItems";
 
 function authHeaders() {
