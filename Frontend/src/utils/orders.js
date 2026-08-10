@@ -1,6 +1,6 @@
 import { getCurrentUser } from "./auth";
 
-const API_URL = "http://https://neelkanth-electronical-1.onrender.com//api";
+const API_URL = "https://neelkanth-electronical-1.onrender.com/api";
 
 function authHeaders() {
   const user = getCurrentUser();
