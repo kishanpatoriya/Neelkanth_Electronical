@@ -311,7 +311,7 @@ const Navbar = () => {
 
         <div className="nav-right">
           <div className="contact-number">
-            <span>📞 +91 98765 43210</span>
+            <span>📞 +91 99135 50501</span>
           </div>
 
           {/* Cart */}
